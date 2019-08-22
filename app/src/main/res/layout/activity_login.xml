@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:padding="10dp"
+    tools:context=".Activity_Login">
+
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="7dp"
+        android:textColor="@color/colorPurple7"
+        android:textCursorDrawable="@color/colorPurple7"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtdinaPersian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TEXT 1"
+        android:textColor="@color/colorPurple7"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtdinaEng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdinaPersian"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TEXT 2"
+        android:textColor="@color/colorPurple7" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNullL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_colorlogo_corner"
+        android:text="login"
+        android:textColor="@color/colorWhite" />
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputLayoutTemp"
+        android:layout_alignParentStart="true"
+        android:hint="نام کاربری"
+        android:textColorHint="@color/colorPurple7"
+        app:backgroundTint="@color/colorPurple7">
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPurple7"
+            android:gravity="right"
+            android:paddingRight="7dp"
+            android:text="admin"
+            android:textColor="@color/colorPurple7"
+            android:textCursorDrawable="@color/colorPurple7" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtNullL"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/colorPurple7"
+        android:hint="رمزعبور"
+        android:textColorHint="@color/colorPurple7"
+        app:backgroundTint="@color/colorPurple7">
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtNullL"
+            android:backgroundTint="@color/colorPurple7"
+            android:gravity="right"
+            android:inputType="textPassword"
+            android:paddingEnd="7dp"
+            android:text="123"
+            android:textColor="@color/colorPurple7"
+            android:textCursorDrawable="@color/colorPurple7" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtNullL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
